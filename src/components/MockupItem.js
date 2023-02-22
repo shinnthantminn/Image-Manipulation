@@ -8,12 +8,10 @@ const Preview = (props) => {
 
   const { imgUrl, snapshot } = props;
 
-  console.log(props.id, props.side);
-
   useEffect(() => {
     const canvas = new fabric.StaticCanvas(canvasRef.current, {
-      width: 150,
-      height: 200
+      width: 300,
+      height: 300,
     });
 
     setCanvas(canvas);
